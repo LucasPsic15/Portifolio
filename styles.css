@@ -728,7 +728,6 @@ html {
 .footer-section.social .social-icons {
     display: flex;
     gap: 20px;
-    justify-content: center;
 }
 
 .footer-section.social .social-icons a {
