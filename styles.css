@@ -771,96 +771,75 @@ html {
 /* Responsividade */
 @media (max-width: 768px) {
     .header {
-        padding: 10px 0; /* Ainda mais reduzido */
+        padding: 10px 0;
     }
-
     .header-content {
-        flex-direction: row; /* Mantém logo e menu hamburguer na mesma linha */
+        flex-direction: row;
         text-align: left;
     }
-
     .header-logo {
         gap: 8px;
     }
-
     .logo-img {
         width: 100px;
     }
-
     .logo-text h1 {
         font-size: 18px;
     }
-
     .logo-text p {
         font-size: 10px;
     }
-
     .navbar ul {
-        display: none; /* Esconde a lista de navegação */
+        display: none; /* Esconde a lista de navegação principal */
     }
-
     .menu-toggle {
-        display: block; /* Mostra o ícone do menu hamburguer */
+        display: none; /* Oculta o botão do menu hamburguer */
     }
-
     .mobile-menu {
-        display: block; /* Disponível, mas escondido até ativado */
+        display: none; /* Oculta o menu mobile completamente */
     }
-
     .hero {
         flex-direction: column;
         text-align: center;
         min-height: auto;
     }
-
     .hero-content {
         max-width: 100%;
         margin-bottom: 20px;
     }
-
     .hero-image img {
         width: 100%;
         max-width: 300px;
     }
-
     .benefits-grid {
         grid-template-columns: 1fr;
     }
-
     .about-content {
         flex-direction: column;
         text-align: center;
     }
-
     .about-text {
         max-width: 100%;
     }
-
     .about-image img {
         max-width: 300px;
     }
-
     .instagram-grid {
         grid-template-columns: 1fr;
     }
-
     .instagram-card img {
         height: 250px;
     }
-
     .faq-grid {
         gap: 10px;
     }
-
     .faq {
         margin: 0 10px;
     }
-
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
-
     .footer-section.social .social-icons {
         justify-content: center;
     }
