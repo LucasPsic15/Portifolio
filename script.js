@@ -53,22 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // Menu Hamburguer
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-
-    menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
-        const isOpen = mobileMenu.classList.contains('active');
-        menuToggle.innerHTML = `<i class="fas fa-${isOpen ? 'times' : 'bars'}"></i>`;
-    });
-
     // Fechar menu ao clicar em um link
-    mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (mobileMenu && menuToggle) {
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
         });
-    });
+    }
 });
